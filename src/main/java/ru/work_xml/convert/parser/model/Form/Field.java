@@ -79,5 +79,4 @@ public class Field {
 				+ digitOnly + ", readOnly=" + readOnly + "]";
 	}
 
-	
 }

@@ -4,10 +4,10 @@ import java.io.File;
 
 public class WorkWeb {
 	File fileToSend;
-	
- public void post(Web webObject) {
-	 fileToSend=(File) webObject.getObjectForPost();
-	
-}
+
+	public void post(Web webObject) {
+		fileToSend = (File) webObject.getObjectForPost();
+
+	}
 
 }

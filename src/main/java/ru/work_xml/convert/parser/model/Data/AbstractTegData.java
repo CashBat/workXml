@@ -7,8 +7,6 @@ import javax.xml.bind.annotation.XmlType;
 
 import main.java.ru.work_xml.convert.parser.model.Form.Field;
 
-
-
 @XmlAccessorType(XmlAccessType.NONE)
 @XmlType(propOrder = { "name", "type", "value", "required", "digitOnly", "readOnly" })
 
@@ -26,7 +24,6 @@ public class AbstractTegData {
 	private Boolean digitOnly;
 	@XmlAttribute
 	private Boolean readOnly;
-
 
 	public String getName() {
 		return name;
@@ -75,29 +72,25 @@ public class AbstractTegData {
 	public void setReadOnly(Boolean readOnly) {
 		this.readOnly = readOnly;
 	}
-	
+
 	public void setFieldsValue(Field field) {
-		this.field=field;
-		if(field.getName()!=null)
-		name = field.getName();
-		if(field.getType()!=null)
-		type = field.getType();
-		if(field.getValue()!=null)
-		value = field.getValue();
-		if(field.getRequired()!=null)
-		required = intToBool(field.getRequired());
-		if(field.getDigitOnly()!=null)
-		digitOnly = intToBool(field.getDigitOnly());
-		if(field.getReadOnly()!=null)
-		readOnly = intToBool(field.getReadOnly());
-	}
-	
-	private boolean intToBool (int intParam) {
-		return intParam==1? true:false;
+		this.field = field;
+		if (field.getName() != null)
+			name = field.getName();
+		if (field.getType() != null)
+			type = field.getType();
+		if (field.getValue() != null)
+			value = field.getValue();
+		if (field.getRequired() != null)
+			required = intToBool(field.getRequired());
+		if (field.getDigitOnly() != null)
+			digitOnly = intToBool(field.getDigitOnly());
+		if (field.getReadOnly() != null)
+			readOnly = intToBool(field.getReadOnly());
 	}
 
-	
-
-
+	private boolean intToBool(int intParam) {
+		return intParam == 1 ? true : false;
+	}
 
 }

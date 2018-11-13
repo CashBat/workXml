@@ -6,9 +6,10 @@ import main.java.ru.work_xml.convert.schem.Schema;
 
 public interface Converter {
 	Schema getSchemeConvert();
-	File getConvertFile();
-	String getOutDir();
-	String getNameOutFile();
-} 
-	
 
+	File getConvertFile();
+
+	String getOutDir();
+
+	String getNameOutFile();
+}

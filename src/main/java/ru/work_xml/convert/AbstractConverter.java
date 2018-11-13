@@ -9,19 +9,10 @@ public abstract class AbstractConverter {
 	protected Object newObject;
 	protected Converter conObject;
 
-	
-	
 	public Object getNewObject() {
 		return newObject;
 	}
 
-
-
-
-	public abstract void convert(Converter conObject) ;
-
-	
-
-	
+	public abstract void convert(Converter conObject);
 
 }

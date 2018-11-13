@@ -5,6 +5,5 @@ public class Fio extends AbstractTegData {
 	public Fio() {
 
 	}
-	
 
 }

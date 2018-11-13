@@ -38,8 +38,8 @@ public class FormToDate implements Schema {
 	}
 
 	private void createForm(Object objectTo) {
-	form = (Form) objectTo;
-		
+		form = (Form) objectTo;
+
 	}
 
 	private void createDate() {
