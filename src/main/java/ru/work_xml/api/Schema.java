@@ -1,4 +1,4 @@
-package main.java.ru.work_xml.convert.schem;
+package main.java.ru.work_xml.api;
 
 public interface Schema {
 

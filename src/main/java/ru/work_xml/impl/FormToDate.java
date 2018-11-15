@@ -1,15 +1,8 @@
-package main.java.ru.work_xml.convert.schem;
+package main.java.ru.work_xml.impl;
 
-import main.java.ru.work_xml.convert.parser.model.Data.AbstractTegData;
-import main.java.ru.work_xml.convert.parser.model.Data.Account;
-import main.java.ru.work_xml.convert.parser.model.Data.Address;
-import main.java.ru.work_xml.convert.parser.model.Data.Counter;
-import main.java.ru.work_xml.convert.parser.model.Data.Date;
-import main.java.ru.work_xml.convert.parser.model.Data.Fio;
-import main.java.ru.work_xml.convert.parser.model.Data.Sum;
-import main.java.ru.work_xml.convert.parser.model.Form.Field;
-import main.java.ru.work_xml.convert.parser.model.Form.Form;
-import main.java.ru.work_xml.convert.parser.model.Form.Group;
+import main.java.ru.work_xml.api.Schema;
+import main.java.ru.work_xml.model.Form.*;
+import main.java.ru.work_xml.model.Data.*;
 
 public class FormToDate implements Schema {
 

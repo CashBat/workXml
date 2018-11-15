@@ -1,4 +1,4 @@
-package main.java.ru.work_xml.convert.parser.model.Form;
+package main.java.ru.work_xml.model.Form;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

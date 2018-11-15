@@ -1,11 +1,10 @@
-package main.java.ru.work_xml.convert.parser.model.Data;
+package main.java.ru.work_xml.model.Data;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
-
-import main.java.ru.work_xml.convert.parser.model.Form.Field;
+import main.java.ru.work_xml.model.Form.Field;
 
 @XmlAccessorType(XmlAccessType.NONE)
 @XmlType(propOrder = { "name", "type", "value", "required", "digitOnly", "readOnly" })

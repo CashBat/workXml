@@ -1,4 +1,4 @@
-package main.java.ru.work_xml.convert.parser;
+package main.java.ru.work_xml.impl;
 
 import java.io.File;
 
@@ -6,6 +6,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+
+import main.java.ru.work_xml.api.Parser;
 
 public class JaxbParser implements Parser {
 

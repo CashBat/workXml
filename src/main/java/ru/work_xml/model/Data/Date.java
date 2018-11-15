@@ -1,4 +1,4 @@
-package main.java.ru.work_xml.convert.parser.model.Data;
+package main.java.ru.work_xml.model.Data;
 
 import java.util.ArrayList;
 import java.util.List;
