@@ -1,6 +1,10 @@
 package main.java.ru.work_xml.impl;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import main.java.ru.work_xml.impl.JaxbParser;
 import main.java.ru.work_xml.api.Parser;
@@ -34,9 +38,19 @@ public class XmlConvector extends BasicConverterFile {
 	}
 
 	private File createOutFile() {
+
 		File result = null;
-		String nameOutFile = nameResultFile + "_from_" + convertFile.getName();
-		result = new File(outDir + "/" + nameOutFile).getAbsoluteFile();
+		try {
+			String nameOutFile = nameResultFile + "_from_" + convertFile.getName();
+			Path dirPath = Paths.get(outDir);
+			if (!Files.exists(dirPath)) {
+				Files.createDirectories(dirPath);		
+			}
+			result = new File(outDir + "/" + nameOutFile).getAbsoluteFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 		return result;
 	}
 
